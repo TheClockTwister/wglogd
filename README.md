@@ -17,5 +17,5 @@ and their respective logs. However, this will only tell you what external IPs ar
 transmitting via WireGuard and the VPN-internal traffic, but not the connection from
 external IP to internal IP.
 
-Therefore, in order to properly **accociate VPN IPs with their public IPs (and thus: geo location)**,
+Therefore, in order to properly **associate VPN IPs with their public IPs (and thus: geo location)**,
 you need a service like this, that can intercept the peer handshakes and log them separately.

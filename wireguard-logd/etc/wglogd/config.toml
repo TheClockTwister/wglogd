@@ -1,8 +1,22 @@
+#                 _                 _ 
+#  __      ____ _| | ___   __ _  __| |
+#  \ \ /\ / / _` | |/ _ \ / _` |/ _` |
+#   \ V  V / (_| | | (_) | (_| | (_| |
+#    \_/\_/ \__, |_|\___/ \__, |\__,_|
+#           |___/         |___/       
+# Logging daemon for WireGuard peer handshakes
+# https://github.com/TheClockTwister/wglogd
+
 
 # interval to check for peer changes [in ms]
+# Depending on how many peers you have, this number
+# has to be adjusted. A general rule of thumb is
+# to stay above 1000ms unless you really need sub-second
+# precision of changes in peer status
 interval_ms = 500
 
 # log file to write changes to.
 # NOTE: This can also be a pipe, so you can pipe it
 # into another process like Logstash or similar ;)
+# You can create named pipes using the `mkfifo` command
 log_file = "/var/log/wglogd.log"
