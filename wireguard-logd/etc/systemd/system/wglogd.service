@@ -1,0 +1,8 @@
+[Unit]
+Description=Logging daemon for WireGuard peer handshakes
+
+[Service]
+ExecStart=/usr/local/bin/wglogd
+
+[Install]
+WantedBy=multi-user.target

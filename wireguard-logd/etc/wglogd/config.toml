@@ -1,0 +1,8 @@
+
+# interval to check for peer changes [in ms]
+interval_ms = 500
+
+# log file to write changes to.
+# NOTE: This can also be a pipe, so you can pipe it
+# into another process like Logstash or similar ;)
+log_file = "/var/log/wglogd.log"

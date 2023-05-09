@@ -1,0 +1,6 @@
+Package: wireguard-logd
+Version: 1.0
+Architecture: amd64
+Maintainer: TheClockTwister
+Description: Logging daemon for WireGuard peer handshakes
+Depends: wireguard-tools

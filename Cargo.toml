@@ -1,0 +1,20 @@
+[package]
+name = "wglogd"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.7.3"
+
+[[bin]]
+name = "wglogd"
+path = "main.rs"
+
+[profile.release]
+opt-level = 3
+codegen-units = 1 # better optimizations
+strip = "debuginfo"
+lto = "fat"
+# rustflags = ["-Ctarget-cpu=native"]
