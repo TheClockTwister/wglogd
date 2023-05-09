@@ -1,3 +1,5 @@
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Logo_of_WireGuard.svg/1757px-Logo_of_WireGuard.svg.png)
+
 # wglogd
 Logging daemon for WireGuard peer handshakes
 
